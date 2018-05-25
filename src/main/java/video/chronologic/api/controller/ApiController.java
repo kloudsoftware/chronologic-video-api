@@ -17,6 +17,8 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 @Controller
@@ -55,6 +57,9 @@ public class ApiController {
             SyndFeed feed = new SyndFeedInput().build(new XmlReader(channelUrl));
             returnList.addAll(youtubeRepo.getVideosForFeed(feed));
         }
+
+        returnList.sort(Comparator.comparing(Video::getPublishedAt));
+        Collections.reverse(returnList);
 
         return returnList;
     }

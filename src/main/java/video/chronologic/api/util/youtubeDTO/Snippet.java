@@ -1,9 +1,11 @@
 package video.chronologic.api.util.youtubeDTO;
 
+import java.util.Date;
+
 public class Snippet {
     private String[] tags;
 
-    private String publishedAt;
+    private Date publishedAt;
 
     private String title;
 
@@ -31,11 +33,11 @@ public class Snippet {
         this.tags = tags;
     }
 
-    public String getPublishedAt() {
+    public Date getPublishedAt() {
         return publishedAt;
     }
 
-    public void setPublishedAt(String publishedAt) {
+    public void setPublishedAt(Date publishedAt) {
         this.publishedAt = publishedAt;
     }
 

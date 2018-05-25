@@ -4,6 +4,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.redis.core.RedisHash;
 
 import java.io.Serializable;
+import java.util.Date;
 
 @RedisHash("Video")
 public class Video implements Serializable {
@@ -19,9 +20,17 @@ public class Video implements Serializable {
     private String thumbnailUrlMedium;
     private String thumbnailUrlLarge;
     private String thumbnailUrlMaxRes;
-
+    private Date publishedAt;
     @Id
     private String uri;
+
+    public Date getPublishedAt() {
+        return publishedAt;
+    }
+
+    public void setPublishedAt(Date publishedAt) {
+        this.publishedAt = publishedAt;
+    }
 
     public String getUri() {
         return uri;

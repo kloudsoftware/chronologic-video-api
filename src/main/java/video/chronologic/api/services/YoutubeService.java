@@ -24,6 +24,7 @@ public class YoutubeService {
             VideoData videoData = youtubeAPI.getVideoDataForId(video.getUri().split(":")[2]);
             Snippet snippet = videoData.getItems().get(0).getSnippet();
             Statistics statistics = videoData.getItems().get(0).getStatistics();
+            video.setPublishedAt(snippet.getPublishedAt());
             video.setDescription(snippet.getDescription());
             video.setLikeCount(statistics.getLikeCount());
             video.setDislikeCount(statistics.getDislikeCount());
