@@ -3,8 +3,10 @@ package video.chronologic.api.dto;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.redis.core.RedisHash;
 
+import java.io.Serializable;
+
 @RedisHash("Video")
-public class Video {
+public class Video implements Serializable {
     private String videoUrl;
     private String channelUrl;
     private String title;
