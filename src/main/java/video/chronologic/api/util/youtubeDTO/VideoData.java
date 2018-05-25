@@ -1,9 +1,11 @@
 package video.chronologic.api.util.youtubeDTO;
 
+import java.util.List;
+
 public class VideoData {
     private String etag;
 
-    private Items[] items;
+    private List<Items> items;
 
     private PageInfo pageInfo;
 
@@ -17,11 +19,11 @@ public class VideoData {
         this.etag = etag;
     }
 
-    public Items[] getItems() {
+    public List<Items> getItems() {
         return items;
     }
 
-    public void setItems(Items[] items) {
+    public void setItems(List<Items> items) {
         this.items = items;
     }
 

@@ -1,53 +1,53 @@
 package video.chronologic.api.util.youtubeDTO;
 
 public class Statistics {
-    private String favoriteCount;
+    private long favoriteCount;
 
-    private String dislikeCount;
+    private long dislikeCount;
 
-    private String likeCount;
+    private long likeCount;
 
-    private String commentCount;
+    private long commentCount;
 
-    private String viewCount;
+    private long viewCount;
 
-    public String getFavoriteCount() {
+    public long getFavoriteCount() {
         return favoriteCount;
     }
 
-    public void setFavoriteCount(String favoriteCount) {
+    public void setFavoriteCount(long favoriteCount) {
         this.favoriteCount = favoriteCount;
     }
 
-    public String getDislikeCount() {
+    public long getDislikeCount() {
         return dislikeCount;
     }
 
-    public void setDislikeCount(String dislikeCount) {
+    public void setDislikeCount(long dislikeCount) {
         this.dislikeCount = dislikeCount;
     }
 
-    public String getLikeCount() {
+    public long getLikeCount() {
         return likeCount;
     }
 
-    public void setLikeCount(String likeCount) {
+    public void setLikeCount(long likeCount) {
         this.likeCount = likeCount;
     }
 
-    public String getCommentCount() {
+    public long getCommentCount() {
         return commentCount;
     }
 
-    public void setCommentCount(String commentCount) {
+    public void setCommentCount(long commentCount) {
         this.commentCount = commentCount;
     }
 
-    public String getViewCount() {
+    public long getViewCount() {
         return viewCount;
     }
 
-    public void setViewCount(String viewCount) {
+    public void setViewCount(long viewCount) {
         this.viewCount = viewCount;
     }
 
