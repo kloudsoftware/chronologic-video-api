@@ -22,12 +22,12 @@ import java.util.Comparator;
 import java.util.List;
 
 @Controller
-@RequestMapping("/api/apiBase")
-public class ApiController {
+@RequestMapping("/api/subscription")
+public class SubscriptionController {
 
     private final YoutubeRepo youtubeRepo;
 
-    public ApiController(YoutubeRepo youtubeRepo) {
+    public SubscriptionController(YoutubeRepo youtubeRepo) {
         this.youtubeRepo = youtubeRepo;
     }
 
